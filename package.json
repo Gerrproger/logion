@@ -1,0 +1,33 @@
+{
+  "name": "logion",
+  "version": "1.0.0",
+  "author": "Gerrproger",
+  "license": "MIT",
+  "description": "Logion allows you to output beautiful logs to a console (TTY)",
+  "repository": "https://github.com/Gerrproger/logion.git",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "docs": "jsdoc2md --template README.hbs index.js > README.md",
+    "lint": "eslint . -c .eslintrc.cjs",
+    "lint:fix": "eslint . -c .eslintrc.cjs --fix",
+    "test": "tap --node-arg='--experimental-loader' --node-arg='@istanbuljs/esm-loader-hook' tests",
+    "test:visual": "node visual-test.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "is-interactive": "^2.0.0",
+    "strip-ansi": "^7.0.1",
+    "wrap-ansi": "^8.1.0"
+  },
+  "devDependencies": {
+    "@istanbuljs/esm-loader-hook": "^0.2.0",
+    "eslint": "^8.35.0",
+    "jsdoc-to-markdown": "^8.0.0",
+    "tap": "^16.3.4"
+  }
+}

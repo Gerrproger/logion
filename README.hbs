@@ -1,0 +1,44 @@
+# Logion
+
+<p align="center">
+  <img src="./logion-reel.gif" width="100%"><br>
+  <b>Logion allows you to output beautiful logs to a console (TTY) - from different parts of the program - use separators, indents, spinners and style your text.</b>
+</p>
+
+## Install
+
+Install via `yarn add logion` | `npm install logion`.
+
+## Usage
+
+Create instance:
+
+```js
+import Logion from 'logion';
+
+const logger = new Logion(opts);
+```
+
+Logion comes with an easy to use composable API that supports chaining:
+
+```js
+logger
+  .text('Hello World!')
+  .newline(2)
+  .text('Good job', 'success')
+  .separate()
+  .line('One liner')
+  .spinner('oh', 'Beatifull spinner');
+```
+
+## API
+
+{{>main}}
+
+
+## TODO
+
+- Add more tests.
+- Add a help message for scrolling and document it.
+- Add more text style (colors) variants.
+- Fix flickering and rerender screen only if needed.
