@@ -28,6 +28,6 @@
     "@istanbuljs/esm-loader-hook": "^0.2.0",
     "eslint": "^8.35.0",
     "jsdoc-to-markdown": "^8.0.0",
-    "tap": "^18.0.0"
+    "tap": "^21.0.0"
   }
 }
